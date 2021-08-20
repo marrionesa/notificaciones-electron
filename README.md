@@ -53,8 +53,8 @@ notifier.on('click', function (notifierObject, options) {
 });
 ```
 
-
-
+<p align="center">
+  <a href="https://patreon.com/marrionesa" target="blank"><img align="center" src="https://github.com/marrionesa/notificaciones-electron/blob/main/logo.png" alt="marrionesa" height="200" width="200" /></a>
 <h3 align="center">XNightmareX | marrionesa</h3>
 <h3 align="left">Si te sirvió de ayuda suscríbete a mis perfiles sociales para que pueda seguir creando más contenido</h3>
 <p align="center">
