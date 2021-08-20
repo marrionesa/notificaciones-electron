@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://patreon.com/marrionesa" target="blank"><img align="center" src="https://github.com/marrionesa/notificaciones-electron/blob/main/logo.png" alt="marrionesa" height="200" width="200" /></a>
+<h3 align="center">XNightmareX | marrionesa</h3>
+
+</p>
+
 # Modulo de Notificaciones en ElectronJS
 En esta pequeña clase os enseñare que modulo de electron se puede encargar de mostrarte fácilmente notificaciones.
 # Antes de comenzar
