@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/marrionesa/notificaciones-electron/issues"
   },
-  "homepage": "https://github.com/marrionesa/notificaciones-electron#readme"
+  "homepage": "https://github.com/marrionesa/notificaciones-electron#readme",
+  "dependencies": {
+    "node-notifier": "^10.0.0"
+  }
 }
