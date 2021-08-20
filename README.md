@@ -30,33 +30,25 @@ nano ejemplo1.js
 ```
 
 ``` 
-const notifier = require("node-notifier");
+const notifier = require('node-notifier');
+const xnightmarex = new notifier.NotificationCenter();
+const path = require('path');
 
-var onError = function(err,response){
-    console.error(err,response);
-};
-
-     // Notificacion
-notifier.notify({
-    message: "Ejemplo de notificacion para mis vampiros",
-    title: "XnightmareX",
-    
-     // Sonido
-    sound: true,//"Bottle",
-
-
-    // Imagen para la notificacion, no sale en los globos.
-    icon : "logo-xnightmare.png",
-
-
-   // Respuesta de la noticacion
-    wait:true
-},onError);
-
-notifier.on('click', function (notifierObject, options) {
-    // Triggers if `wait: true` and user clicks notification
-    alert("Request Triggered");
-});
+xnightmarex.notify(
+  {
+    title: 'Notificacion XNightmareX',
+    subtitle: '',
+    message: "Suscribiros al canal vampiros!",
+    sound: 'Bomb',
+    wait: true,
+    icon: path.join(__dirname, 'logo.png'),
+    contentImage: path.join(__dirname, 'logo.png'),
+open: 'http://' + path.join('twitch.tv', 'marrionesa')
+  },
+  function() {
+    console.log(arguments);
+  }
+);
 ```
 
 <p align="center">
