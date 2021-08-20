@@ -58,7 +58,7 @@ notifier.on('click', function (notifierObject, options) {
 <h3 align="center">XNightmareX | marrionesa</h3>
 <p align="center">
 <a href="https://www.youtube.com/channel/UCFvCUyhMCCl-jC_0nYWwGrA" target="blank"><img align="center" src="https://raw.githubusercontent.com/marrionesa/notificaciones-electron/youtube.svg" alt="marrionesa" height="30" width="40" /></a>
- <a href="https://www.twitch.tv/marrionesa" target="blank"><img align="center" src="https://raw.githubusercontent.com/marrionesa/notificaciones-electron/twich.svg" alt="marrionesa" height="30" width="40" /></a>
+ <a href="https://www.twitch.tv/marrionesa" target="blank"><img align="center" src="https://raw.githubusercontent.com/marrionesa/notificaciones-electron/twitch.svg" alt="marrionesa" height="30" width="40" /></a>
   <a href="https://patreon.com/marrionesa" target="blank"><img align="center" src="https://raw.githubusercontent.com/marrionesa/notificaciones-electron/patreon.svg" alt="marrionesa" height="30" width="40" /></a>
 </p>
 
