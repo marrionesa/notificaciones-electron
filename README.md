@@ -11,7 +11,7 @@ Recuerda tener instalado NodeJS
 # Comenzando
 Primero debemos crear un directorio en la ruta que queramos con el nombre que queramos para este proyecto.
 ``` 
-mkdir notificaciones-xnightmare
+mkdir notificaciones-electron
 ```
 Creando el proyecto con nodejs
 ``` 
