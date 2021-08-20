@@ -1,0 +1,22 @@
+{
+  "name": "notificaciones-electron",
+  "version": "1.0.0",
+  "description": "En esta pequeña clase os enseñare que modulo de electron se puede encargar de mostrarte fácilmente notificaciones.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marrionesa/notificaciones-electron.git"
+  },
+  "keywords": [
+    "xnightmarex"
+  ],
+  "author": "marrionesa",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/marrionesa/notificaciones-electron/issues"
+  },
+  "homepage": "https://github.com/marrionesa/notificaciones-electron#readme"
+}
