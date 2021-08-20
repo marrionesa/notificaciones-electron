@@ -24,6 +24,27 @@ npm install --save node-notifier
 Crearemos un archivo JS donde le diremos que nos cargue el codigo para mostrar la notificacion
 Como veremos varios ejemplos le pondre el nombre al fichero de ejemplo1.js pa no liarnos luego.  
 
+# Ejemplo 0 (Minimo)
+``` 
+nano ejemplo0.js
+```
+
+``` 
+
+const notifier = require('node-notifier');
+
+// Notificacion inicial
+notifier.notify('Nueva notificación de XNightmarex');
+
+// Notificacion posterior con mensaje
+notifier.notify({
+  title: 'XNightmareX',
+  message: 'Sígueme en redes @marrionesa'
+});
+
+
+```
+
 # Ejemplo 1 (Simple)
 ``` 
 nano ejemplo1.js
