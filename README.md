@@ -43,13 +43,73 @@ xnightmarex.notify(
     wait: true,
     icon: path.join(__dirname, 'logo.png'),
     contentImage: path.join(__dirname, 'logo.png'),
-open: 'http://' + path.join('twitch.tv', 'marrionesa')
+    open: 'http://' + path.join('twitch.tv', 'marrionesa')
   },
+  
   function() {
     console.log(arguments);
   }
 );
 ```
+
+# Ejemplo 2 (Un poco mas avanzado)
+``` 
+nano ejemplo2.js
+```
+
+``` 
+const notifier = require('node-notifier');
+const xnightmarex = new notifier.NotificationCenter();
+const path = require('path');
+const trueAnswer = 'Todavía no';
+
+xnightmarex.notify(
+  {
+    title: 'XnightmareX - Notificacion',
+    message: 'Te has suscrito a mi canal?',
+    sound: 'Bomb',
+    icon:  'logo.png',
+    contentImage: 'logo.png',
+    open:  'https://twitch.tv/marrionesa',
+    closeLabel: 'Si',
+    actions: trueAnswer
+  },
+  
+  function(err, response, metadata) {
+    if (err) throw err;
+    console.log(metadata);
+
+    if (metadata.activationValue !== trueAnswer) {
+      return; 
+    }
+
+
+    xnightmarex.notify(
+      {
+        title: 'Suscrite y apoya es gratis',
+        message: 'Quieres decir algo?',
+        sound: 'Jazz',
+        icon:  'logo.png',
+        contentImage: 'logo.png',
+        open:  'https://twitch.tv/marrionesa',
+        reply: true
+      },
+      
+      function(err, response, metadata) {
+        if (err) throw err;
+        console.log(metadata);
+      }
+    );
+  }
+);
+
+xnightmarex.on('replied', function(obj, options, metadata) {
+  console.log('Mensaje de respuesta', metadata);
+});
+```
+
+
+
 
 <p align="center">
   <a href="https://patreon.com/marrionesa" target="blank"><img align="center" src="https://github.com/marrionesa/notificaciones-electron/blob/main/logo.png" alt="marrionesa" height="200" width="200" /></a>
