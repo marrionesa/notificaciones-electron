@@ -1,4 +1,4 @@
-# notificaciones-electron
+# Modulo de Notificaciones en ElectronJS
 En esta pequeña clase os enseñare que modulo de electron se puede encargar de mostrarte fácilmente notificaciones.
 # Antes de comenzar
 Recuerda tener instalado NodeJS
